@@ -1,32 +1,66 @@
 {
-  "name": "project-gulp-vue",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-transform-modules-amd": "^7.5.0",
-    "browser-sync": "^2.26.7",
-    "browserify": "^16.5.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-run-sequence": "^0.3.2",
-    "gulp-vue-single-file-component": "^1.0.12",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "sass-resources-loader": "^2.0.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vinyl-source-stream": "^2.0.0",
-    "vue": "^2.6.10",
-    "vueify": "^9.4.1"
-  }
+    "name": "project-gulp-vue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@nutui/nutui": "^2.0.9",
+        "axios": "^0.18.0",
+        "core-js": "^2.6.5",
+        "img-vuer": "^0.19.1",
+        "jquery": "^3.4.1",
+        "moment": "^2.24.0",
+        "swiper": "^4.5.0",
+        "vue": "^2.6.10",
+        "vue-clipboard2": "^0.2.1",
+        "vue-dplayer": "^0.0.10",
+        "vue-qriously": "^1.1.1",
+        "vue-quill-editor": "^3.0.6",
+        "vue-router": "^3.0.3",
+        "vue-star-rating": "^1.6.1",
+        "vue-swipe-actions": "^2.0.0-beta.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/plugin-transform-modules-amd": "^7.5.0",
+        "browser-sync": "^2.26.7",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-run-sequence": "^0.3.2",
+        "gulp-vue-single-file-component": "^1.0.12",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^7.1.0",
+        "sass-resources-loader": "^2.0.1",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.2",
+        "vinyl-source-stream": "^2.0.0",
+        "vue": "^2.6.10",
+        "vueify": "^9.4.1"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 11",
+        "Android >= 4.0",
+        "iOS >= 8"
+    ],
+    "transformModules": {
+        "cube-ui": {
+            "transform": "cube-ui/src/modules/${member}",
+            "kebabCase": true
+        }
+    }
 }

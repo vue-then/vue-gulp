@@ -4,6 +4,7 @@ node_modules
 /build/node_modules
 /build/src
 /project-gulp-vue/public/js
+/project-gulp-vue/public/src
 # local env files
 .env.local
 .env.*.local

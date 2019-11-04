@@ -34,7 +34,7 @@
         };
     </script> 
     <!-- <script data-main="js/app" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"></script>  -->
-    <script data-main="js/app" src="./lib/require.js"></script> 
+    <script data-main="src/app" src="./lib/require.js"></script> 
 </head>
 <style>
     [v-cloak]{
@@ -43,9 +43,6 @@
 </style>
 <body>
     <div id="app" v-cloak>
-        {{ message }}
-        <hello>Bob</hello>
-        <hello2 name="Jim"></hello2>
         <p>
             <!-- 使用 router-link 组件来导航. -->
             <!-- 通过传入 `to` 属性指定链接. -->
