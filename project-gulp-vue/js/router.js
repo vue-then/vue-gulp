@@ -6,6 +6,9 @@ Vue.use(VueRouter);
 const Foo = { template: "<div>foo</div>" };
 const Bar = { template: "<div>bar</div>" };
 
+import index from "./components/index";
+
+
 const routes = [
     {
         path: "/",
@@ -16,8 +19,8 @@ const routes = [
     {
         name: "foo",
         path: "/foo",
-        component: () =>
-            require("./components/index.js").default
+        component: index
+            
     },
 	{ path: "/bar", component: Bar }
 ];

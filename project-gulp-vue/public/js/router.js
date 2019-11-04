@@ -1,4 +1,4 @@
-define(["exports", "vue", "../lib/vue-router"], function (_exports, _vue, _vueRouter) {
+define(["exports", "vue", "../lib/vue-router", "./components/index"], function (_exports, _vue, _vueRouter, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -7,6 +7,7 @@ define(["exports", "vue", "../lib/vue-router"], function (_exports, _vue, _vueRo
   _exports.default = void 0;
   _vue = _interopRequireDefault(_vue);
   _vueRouter = _interopRequireDefault(_vueRouter);
+  _index = _interopRequireDefault(_index);
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26,7 +27,7 @@ define(["exports", "vue", "../lib/vue-router"], function (_exports, _vue, _vueRo
   }, {
     name: "foo",
     path: "/foo",
-    component: () => require("./components/index.js").default
+    component: _index.default
   }, {
     path: "/bar",
     component: Bar
