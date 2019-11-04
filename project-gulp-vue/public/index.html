@@ -5,9 +5,9 @@
     <title>Example</title>
     <script>
         var require = {
-            baseUrl: '/',
+            baseUrl: './',
             paths: {
-                'vue': '//cdn.jsdelivr.net/npm/vue/dist/vue'
+                'vue': './lib/vue'
             }
         };
         
@@ -34,7 +34,7 @@
         };
     </script> 
     <!-- <script data-main="js/app" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"></script>  -->
-    <script data-main="js/app" src="/lib/require.js"></script> 
+    <script data-main="js/app" src="./lib/require.js"></script> 
 </head>
 <style>
     [v-cloak]{

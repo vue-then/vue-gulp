@@ -52,6 +52,13 @@ gulp.task('watch', () => {
  
 // // gulp.task('default', gulp.parallel('scripts', 'vue', 'watch'));
 
+gulp.task("build",function(){
+    
+
+
+})
+
+
 gulp.task("runs", function (done) {
     runSequence(
         ['deljs'],
